@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/tmdb%20/static/css/main.bfe26ed1.css",
-    "main.js": "/github.io/tmdb%20/static/js/main.5bd736ed.js",
-    "index.html": "/github.io/tmdb%20/index.html",
-    "main.bfe26ed1.css.map": "/github.io/tmdb%20/static/css/main.bfe26ed1.css.map",
-    "main.5bd736ed.js.map": "/github.io/tmdb%20/static/js/main.5bd736ed.js.map"
+    "main.css": "/github.io/tmdb/static/css/main.bfe26ed1.css",
+    "main.js": "/github.io/tmdb/static/js/main.5bd736ed.js",
+    "index.html": "/github.io/tmdb/index.html",
+    "main.bfe26ed1.css.map": "/github.io/tmdb/static/css/main.bfe26ed1.css.map",
+    "main.5bd736ed.js.map": "/github.io/tmdb/static/js/main.5bd736ed.js.map"
   },
   "entrypoints": [
     "static/css/main.bfe26ed1.css",
