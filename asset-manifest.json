@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/github.io/tmdb%20/static/css/main.724adb08.css",
+    "main.js": "/github.io/tmdb%20/static/js/main.c80b5b60.js",
+    "index.html": "/github.io/tmdb%20/index.html",
+    "main.724adb08.css.map": "/github.io/tmdb%20/static/css/main.724adb08.css.map",
+    "main.c80b5b60.js.map": "/github.io/tmdb%20/static/js/main.c80b5b60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.724adb08.css",
+    "static/js/main.c80b5b60.js"
+  ]
+}
