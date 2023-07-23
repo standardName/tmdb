@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.root {
+  --color: #444;
+}
+body {
+  background-color: #124e68;
+  background-image: radial-gradient(
+      circle farthest-corner at top left,
+      #0d353f 0%,
+      rgba(225, 243, 97, 0) 50%
+    ),
+    radial-gradient(
+      circle farthest-side at top right,
+      #413447 0%,
+      rgba(181, 176, 177, 0) 20%
+    ),
+    radial-gradient(
+      circle farthest-corner at bottom right,
+      #2b2f44 0%,
+      rgba(204, 104, 119, 0) 33%
+    ),
+    radial-gradient(
+      circle farthest-corner at top right,
+      #2e4c4c 0%,
+      rgba(155, 221, 240, 0) 50%
+    ),
+    radial-gradient(
+      ellipse at bottom center,
+      #35292f 0%,
+      rgba(254, 43, 0, 0) 80%
+    );
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+}
+
+.App {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.header {
+  margin-top: 10px;
+}
+.logo {
+  color: var(--color);
+  font-size: 1.2rem;
+}
+.search-form {
+  margin-top: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.search-input {
+  width: 70%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid #a5a9a5;
+  padding: 5px;
+  outline: none;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: inherit;
+}
+.search-input:hover {
+  border: 2px solid #f0f8ef;
+}
+.search-button {
+  width: 28%;
+  margin-left: 2%;
+  border: none;
+  height: 50px;
+  background-color: #5dbf4e;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 2px;
+}
+.search-button:hover {
+  background-color: #71d262;
+}
+.movie-list {
+  transition: all 1s linear;
+}
+.movie {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #498c3f;
+  transition: all 1s linear;
+}
+.movie:hover {
+  border-bottom: 1px solid #5dbf4e;
+}
+.movie-poster-block {
+  width: 30%;
+}
+.movie-info {
+  width: 70%;
+  padding-left: 10px;
+}
+.movie-title {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: medium;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.movie-year {
+  font-size: 0.7rem;
+  color: #8f96a6;
+}
+.overview {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 0.9rem;
+}
+.rating {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #8f96a6;
+}
+.filters {
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 4px;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.filters span {
+  font-size: 0.9rem;
+}
+.filters span.sort-button {
+  width: 10%;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.active {
+  color: #498c3f;
+  text-decoration: underline;
+  font-weight: 900;
+}
+.genres {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 3px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+  line-height: 2;
+  padding: 4px;
+}
+.genre {
+  display: block;
+  width: auto;
+  padding: 0 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.movie-genres {
+  font-size: 0.8rem;
+  padding-right: 5px;
+  color: #8f96a6;
+}
+.progress {
+  width: 30%;
+  margin-right: 20px;
+}
+.movie-page {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.movie-page-title {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+.movie-page .movie-poster {
+  width: 30%;
+}
+.movie-page .overview {
+  width: 60%;
+  padding: 0 5px;
+  margin-bottom: 30px;
+}
+.rewievs-block {
+  margin-top: 50px;
+}
+.rewiev {
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #8f96a6;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: 10px 0;
+}
+
+.rewiev-avatar {
+  width: 50px;
+}
+.rewiev-user-info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.rewiev-user-info span {
+  width: fit-content;
+}
+.rewiev-date {
+  font-size: 0.8rem;
+  color: #8f96a6;
+}
+.rewiev-author {
+  font-size: 0.9rem;
+  color: tomato;
+}
+.rewiev-content {
+  padding: 10px 0;
+}
+.back {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #5dbf4e;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  width: 10%;
+  position: fixed;
+  left: 10%;
+  cursor: pointer;
+}
+.back:hover {
+  background-color: #71d262;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 0.8rem;
+  }
+  .App {
+    width: 95%;
+  }
+}
+@media (max-width: 820px) {
+  .App {
+    width: 95%;
+  }
+}
